@@ -1,7 +1,34 @@
+body{
+    background-color: rgb(61, 61, 61);
+}
+
 .outerContainer{
+    width: 100%;
 }
 
 .innerContainer{
     margin: 0 auto;
     width: fit-content;
 }
+
+.outerApp{
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.innerApp{
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: wheat;
+}
+
+.app{
+    margin: 1em;
+}
+
+input[type="text"] {
+    font-size: 1em;
+    text-align: center;
+}
+
