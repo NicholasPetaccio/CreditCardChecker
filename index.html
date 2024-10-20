@@ -46,15 +46,10 @@
                                                 <input type="text" name="state" id="state" size="2" placeholder="NY" disabled>
                                             </div>
                                         </div>
-                                        <div class="creditCardInfo">
-                                            <p class="displayNums hidden" id="displayNum1">0000</p>
-                                            <p class="displayNums hidden" id="displayNum2">0000</p>
-                                            <p class="displayNums hidden" id="displayNum3">0000</p>
-                                            <p class="displayNums hidden" id="displayNum4">0000</p>
-                                        </div>
                                         <div class="creditCardNumber">
                                             <p class="inputHeader" id="ccTitle">Credit Card Number</p>
-                                            <input type="text" class="userInput" id="userInput" name="creditcard">
+                                            <input type="text" class="userInput" id="userInput" name="creditcard" maxlength="20" required>
+                                            <p class="appResponse hidden" id="responseMessage">Placeholder</p>
                                         </div>
                                         <div>
                                             <div class="creditCardExp" id="expiration">
@@ -79,18 +74,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="appFooterOuter">
-                                    <div class="appFooterInner">
-                                        <div class="appFooter">
-                                            <p class="appResponse" id="response">
-                                                <div class="userSubmit">
-                                                    <button type="button" class="userSubmitBtn">Place Order</button>
+                                        <div class="appFooterOuter">
+                                            <div class="appFooterInner">
+                                                <div class="appFooter">
+                                                    <p class="appResponse" id="response">
+                                                        <div class="userSubmit">
+                                                            <button type="button" class="userSubmitBtn">Place Order</button>
+                                                        </div>
+                                                    </p>
                                                 </div>
-                                            </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
