@@ -14,22 +14,80 @@
                     <div class="app">
                         <header class="appHeader">
                             <h1 class="appHeading">Credit Card Checker</h1>
-                            <p class="Instructions">
+                            <p class="instructions">
                                 Type in a credit card number and press enter to see if it is valid or not.
                             </p>
                         </header>
                         <div class="appBodyOuter">
                             <div class="appBodyInner">
                                 <div class="appBody">
-                                    <form>
-                                        <input type="text" class="userInput" id="userInput">
+                                    <form class="orderInfo">
+                                        <div class="name">
+                                            <div class="firstName">
+                                                <p class="inputHeader" >First Name</p>
+                                                <input type="text" name="firstname" id="firstName" size="10" placeholder="Joe" disabled>
+                                            </div>
+                                            <div class="lastName">
+                                                <p class="inputHeader" >Last Name</p>
+                                                <input type="text" name="lastName" id="lastName" size="10" placeholder="Schmoe" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="address">
+                                            <p class="inputHeader">Street Address</p>
+                                            <input type="text" name="address" id="address" placeholder="612 walf avenue" disabled>
+                                        </div>
+                                        <div class="cityState">
+                                            <div class="city">
+                                                <p class="inputHeader" >City</p>
+                                                <input type="text" name="city" id="city" size="15" placeholder="New York City" disabled>
+                                            </div>
+                                            <div class="state">
+                                                <p class="inputHeader" >State</p>
+                                                <input type="text" name="state" id="state" size="2" placeholder="NY" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="creditCardInfo">
+                                            <p class="displayNums hidden" id="displayNum1">0000</p>
+                                            <p class="displayNums hidden" id="displayNum2">0000</p>
+                                            <p class="displayNums hidden" id="displayNum3">0000</p>
+                                            <p class="displayNums hidden" id="displayNum4">0000</p>
+                                        </div>
+                                        <div class="creditCardNumber">
+                                            <p class="inputHeader" id="ccTitle">Credit Card Number</p>
+                                            <input type="text" class="userInput" id="userInput" name="creditcard">
+                                        </div>
+                                        <div>
+                                            <div class="creditCardExp" id="expiration">
+                                                <div class="month">
+                                                    <p class="inputHeader">Month</p>
+                                                    <input type="text" class="ccExp" id="ccExpirationMonth" name="expiration month" size="2" placeholder="13" disabled>
+                                                </div>
+                                                <div class="seperator">
+                                                    <p class="inputHeader"> / </p>
+                                                </div>
+                                                <div class="year">
+                                                    <p class="inputHeader">Year</p>
+                                                    <input type="text" class="ccExp" id="ccExpirationYear" name="expiration year" placeholder="3056" size="4" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="cvvOuter">
+                                                <div class="cvvInner">
+                                                    <p class="inputHeader">CVV</p>
+                                                    <input type="text" class="cvv" id="cvv" name="expiration year" size="3" placeholder="999" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="appFooterOuter">
                                     <div class="appFooterInner">
                                         <div class="appFooter">
                                             <p class="appResponse" id="response">
-
+                                                <div class="userSubmit">
+                                                    <button type="button" class="userSubmitBtn">Place Order</button>
+                                                </div>
                                             </p>
                                         </div>
                                     </div>
