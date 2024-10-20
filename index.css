@@ -99,7 +99,7 @@ body{
 }
 
 .creditCardNumber{
-    margin: 0;
+    margin-top: 1em;
 }
 
 .creditCardExp{
@@ -123,17 +123,24 @@ input[type="text"] {
 .userSubmitBtn{
     width: 80%;
     font-size: 2em;
-    background-color: rgb(188, 160, 0);
+    background-color: gold;
     color: white;
     text-shadow: 3px 3px 3px black;
     font-weight: bolder;
     box-shadow: 2px 2px 3px black;
     border-radius: 0.5em;
+    margin-top: 0.5em;
+
 }
 
 .userSubmitBtn:hover{
-    background-color: gold;
+    background-color: rgb(204, 174, 0);
+    transition: 100ms ease-in-out;
     cursor: pointer;
+}
+
+.appResponse{
+    margin: 0;
 }
 
 #ccTitle{
@@ -142,6 +149,14 @@ input[type="text"] {
 
 #userInput{
     width: 100%;
+}
+
+.valid#userInput:focus{
+    outline-color: green;
+}
+
+.invalid#userInput:focus{
+    outline-color: red;
 }
 
 #address{
