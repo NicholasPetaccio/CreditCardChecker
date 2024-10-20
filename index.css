@@ -20,15 +20,131 @@ body{
 .innerApp{
     border: 2px solid black;
     border-radius: 1em;
-    background-color: wheat;
+    background-color: white;
+    box-shadow: 3px 3px 5px black;
+}
+
+.appHeading{
+    font-size: 1.5em;
+}
+
+.appBodyInner{
+    display: flexbox;
+}
+
+.appBody{
+    justify-content: space-around;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.instructions {
+    font-size: 1em;
+}
+
+.orderInfo{
+    text-align: center;
+    text-shadow: 1px 1px 3px gray;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .app{
     margin: 1em;
 }
 
+.name{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.firstName{
+    width: 100%;
+}
+
+.lastName{
+    width: 100%;
+}
+
+.city{
+    width: 100%;
+}
+
+.state{
+    width: 100%;
+}
+
+.cityState{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.creditCardInfo{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.displayNums{
+    margin: 0.2em;
+    font-weight:bolder;
+    text-shadow: 2px 2px 7px black;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.creditCardNumber{
+    margin: 0;
+}
+
+.creditCardExp{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.inputHeader{
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
 input[type="text"] {
     font-size: 1em;
     text-align: center;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 0.5em;
+}
+
+.userSubmitBtn{
+    width: 80%;
+    font-size: 2em;
+    background-color: rgb(188, 160, 0);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 0.5em;
+}
+
+.userSubmitBtn:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+
+#ccTitle{
+    margin-top: 0;
+}
+
+#userInput{
+    width: 100%;
+}
+
+#address{
+    width: 100%;
 }
 
