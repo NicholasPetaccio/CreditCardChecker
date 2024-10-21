@@ -65,6 +65,8 @@ document.getElementById("submitBtn").addEventListener("click", submitForm = () =
 document.getElementById("back").addEventListener("click", back = () => {
     activePage.classList.remove("active");
     activeConf.classList.remove("active");
-})
+});
+
+
 
 
