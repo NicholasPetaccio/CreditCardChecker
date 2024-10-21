@@ -38,16 +38,33 @@ const validation =
             response.classList.remove('hidden');
             input.classList.remove('invalid');
             response.classList.add('valid');
+            return true;
         }else{
             response.innerText = "Invalid Credit Card";
             input.style.border = '2px solid red';
             response.style.color = 'red';
             response.classList.remove('hidden');
             input.classList.add('invalid');
+            return false;
         }
     };
 }([0, 2, 4, 6, 8, 1, 3, 5, 7, 9]);
 
+let activePage = document.getElementById("insideApp");
+let activeConf = document.getElementById("confirmation");
 
+document.getElementById("submitBtn").addEventListener("click", submitForm = () => {
+    if(!validation(cc)){
+        response.innerText = "Please enter a valid Credit Card number (Check the README)"
+    }else if(validation(cc)){
+        activePage.classList.add("active");
+        activeConf.classList.add("active");
+    }
+});
+
+document.getElementById("back").addEventListener("click", back = () => {
+    activePage.classList.remove("active");
+    activeConf.classList.remove("active");
+})
 
 
