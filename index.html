@@ -10,12 +10,12 @@
     <div class="outerContainer">
         <div class="innerContainer">
             <div class="outerApp">
-                <div class="innerApp">
+                <div class="innerApp" id="insideApp">
                     <div class="app">
                         <header class="appHeader">
                             <h1 class="appHeading">Credit Card Checker</h1>
                             <p class="instructions">
-                                Type in a credit card number and press enter to see if it is valid or not.
+                                Type in a credit card number to see if it's valid. For test CC #'s view the README.
                             </p>
                         </header>
                         <div class="appBodyOuter">
@@ -79,13 +79,50 @@
                                                 <div class="appFooter">
                                                     <p class="appResponse" id="response">
                                                         <div class="userSubmit">
-                                                            <button type="button" class="userSubmitBtn">Place Order</button>
+                                                            <button type="button" class="userSubmitBtn" id="submitBtn" onclick="submitForm()">Place Order</button>
                                                         </div>
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outerConf" id="confirmation">
+                    <div class="innerConf">
+                        <div class="confirmation">
+                            <h1 class="confHeading">Thank-you for your order!</h1>
+                            <p>Your order is currently processing and will ship as soon as possible!</p>
+                            <div class="outerReceipt">
+                                <div class="innerReceipt">
+                                    <div class="receipt">
+                                        <h3>Receipt</h3>
+                                        
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="productDesc">
+                                        <img class="productImg" src="assets/mayo.png" />
+                                        <div class="orderSummary">
+                                            <h4 class="productHeader">1lb Hellman's Mayonaise</h4>
+                                            <p class="productPrice">Price: $8.99</p>
+                                            <p class="productQty">Qty: 1000</p>
+                                        </div>
+                                    </div>
+                                    <div class="outerTotal">
+                                        <div class="innerTotal">
+                                            <div class="total">
+                                                <p>Subtotal: $8,990.00</p>
+                                                <p>Order total: $8,990.07</p>
+                                            </div>
+                                            <div class="back">
+                                                <button class="backBtn" type="button" onclick="back()" id="back">< Back to Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
