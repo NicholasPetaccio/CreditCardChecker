@@ -1,9 +1,11 @@
 body{
     background-color: rgb(61, 61, 61);
+    overflow-x: hidden;
 }
 
 .outerContainer{
     width: 100%;
+    overflow: hidden;
 }
 
 .innerContainer{
@@ -14,7 +16,8 @@ body{
 .outerApp{
     text-align: center;
     font-size: 1.5em;
-
+    display: flex;
+    overflow-x: hidden;
 }
 
 .innerApp{
@@ -22,14 +25,48 @@ body{
     border-radius: 1em;
     background-color: white;
     box-shadow: 3px 3px 5px black;
+    justify-content: center;
+    position: absolute;
+    right: 25%;
+    transition: 250ms ease-in;
+}
+
+.outerConf{
+    position: absolute;
+    right: -100%;
+    transition: 250ms ease-in;
+}
+
+.innerConf{
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    width: 100%;
+}
+
+.confirmation{
+    margin: 0.5em;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+}
+
+.confHeading{
+    text-align: center;
+}
+
+.innerApp.active{
+    right: 100%;
+    transition: 250ms ease-out;
+}
+
+.outerConf.active{
+    right: 25%;
+    transition: 250ms ease-in;
 }
 
 .appHeading{
     font-size: 1.5em;
-}
-
-.appBodyInner{
-    display: flexbox;
 }
 
 .appBody{
@@ -88,12 +125,6 @@ body{
     display: flex;
 }
 
-.displayNums{
-    margin: 0.2em;
-    font-weight:bolder;
-    text-shadow: 2px 2px 7px black;
-}
-
 .hidden{
     opacity: 0;
 }
@@ -111,6 +142,49 @@ body{
 .inputHeader{
     font-weight: bold;
     margin: 0.5em 0;
+}
+
+.innerReceipt{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.receipt{
+    text-align: center;
+    justify-content: center;
+}
+
+.productDesc{
+    display: flex;
+    text-align: center;
+}
+
+.productImg{
+    width: 5em;
+    height: 5em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.orderSummary{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.productHeader, .productPrice, .productQty{
+    margin: 0 auto;
+    margin-left: 5em;
+    text-align: center;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+
+.backBtn{
+    font-size: 1em;
 }
 
 input[type="text"] {
